@@ -7,4 +7,4 @@ Android와 STS4(Boot)연동
 
 EzOrder - 프로젝트
 # React
-sboard(JPA), sboard_my(MyBatis)
+sboard, todo(JPA), sboard_my(MyBatis)
