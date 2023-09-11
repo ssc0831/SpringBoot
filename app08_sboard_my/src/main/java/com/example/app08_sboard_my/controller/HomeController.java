@@ -37,7 +37,6 @@ public class HomeController {
 //			boardService.insert(board);
 //			System.out.println(board);
 //			return board;
-//			
 //		}
 	
 
