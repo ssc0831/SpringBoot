@@ -1,4 +1,4 @@
-package com.example.ezprder.controller;
+package com.example.ezorder.controller;
 
 import java.util.List;
 
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.ezprder.model.Member;
-import com.example.ezprder.model.OrderInfo;
-import com.example.ezprder.model.Shop;
-import com.example.ezprder.service.MemberService;
-import com.example.ezprder.service.OrderService;
-import com.example.ezprder.service.ShopService;
+import com.example.ezorder.model.Member;
+import com.example.ezorder.model.OrderInfo;
+import com.example.ezorder.model.Shop;
+import com.example.ezorder.service.MemberService;
+import com.example.ezorder.service.OrderService;
+import com.example.ezorder.service.ShopService;
 
 import lombok.RequiredArgsConstructor;
 

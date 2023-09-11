@@ -1,11 +1,11 @@
-package com.example.ezprder.service;
+package com.example.ezorder.service;
 
 import javax.transaction.Transactional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.ezprder.model.Member;
-import com.example.ezprder.repository.MemberRepository;
+import com.example.ezorder.model.Member;
+import com.example.ezorder.repository.MemberRepository;
 
 import lombok.RequiredArgsConstructor;
 

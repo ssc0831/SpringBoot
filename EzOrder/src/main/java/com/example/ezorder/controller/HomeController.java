@@ -1,4 +1,4 @@
-package com.example.ezprder.controller;
+package com.example.ezorder.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

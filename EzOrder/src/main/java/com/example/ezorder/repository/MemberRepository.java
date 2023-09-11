@@ -1,8 +1,8 @@
-package com.example.ezprder.repository;
+package com.example.ezorder.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.ezprder.model.Member;
+import com.example.ezorder.model.Member;
 
 public interface MemberRepository extends JpaRepository<Member, Long> {
 	Member findByMemberName(String memberName);

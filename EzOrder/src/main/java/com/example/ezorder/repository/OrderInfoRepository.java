@@ -1,12 +1,12 @@
-package com.example.ezprder.repository;
+package com.example.ezorder.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.ezprder.model.Member;
-import com.example.ezprder.model.OrderInfo;
-import com.example.ezprder.model.Shop;
+import com.example.ezorder.model.Member;
+import com.example.ezorder.model.OrderInfo;
+import com.example.ezorder.model.Shop;
 
 public interface OrderInfoRepository extends JpaRepository<OrderInfo, Long> {
 	List<OrderInfo> findByMemberOrderByOrderIdDesc(Member member);

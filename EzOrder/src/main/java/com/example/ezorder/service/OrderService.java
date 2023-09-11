@@ -1,4 +1,4 @@
-package com.example.ezprder.service;
+package com.example.ezorder.service;
 
 import java.util.List;
 
@@ -7,13 +7,13 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ezprder.model.Member;
-import com.example.ezprder.model.OrderCount;
-import com.example.ezprder.model.OrderInfo;
-import com.example.ezprder.model.Shop;
-import com.example.ezprder.repository.OrderCountRepository;
-import com.example.ezprder.repository.OrderInfoRepository;
-import com.example.ezprder.repository.ShopRepository;
+import com.example.ezorder.model.Member;
+import com.example.ezorder.model.OrderCount;
+import com.example.ezorder.model.OrderInfo;
+import com.example.ezorder.model.Shop;
+import com.example.ezorder.repository.OrderCountRepository;
+import com.example.ezorder.repository.OrderInfoRepository;
+import com.example.ezorder.repository.ShopRepository;
 
 import lombok.RequiredArgsConstructor;
 

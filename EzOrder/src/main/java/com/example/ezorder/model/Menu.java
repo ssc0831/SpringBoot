@@ -1,4 +1,4 @@
-package com.example.ezprder.model;
+package com.example.ezorder.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

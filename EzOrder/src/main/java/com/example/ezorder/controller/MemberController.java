@@ -1,4 +1,4 @@
-package com.example.ezprder.controller;
+package com.example.ezorder.controller;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.ezprder.model.Member;
-import com.example.ezprder.service.MemberService;
+import com.example.ezorder.model.Member;
+import com.example.ezorder.service.MemberService;
 
 import lombok.RequiredArgsConstructor;
 

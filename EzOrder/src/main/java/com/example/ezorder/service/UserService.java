@@ -1,10 +1,10 @@
-package com.example.ezprder.service;
+package com.example.ezorder.service;
 
 import org.springframework.stereotype.Service;
 
-import com.example.ezprder.model.User;
-import com.example.ezprder.repository.ShopRepository;
-import com.example.ezprder.repository.UserRepository;
+import com.example.ezorder.model.User;
+import com.example.ezorder.repository.ShopRepository;
+import com.example.ezorder.repository.UserRepository;
 
 import lombok.RequiredArgsConstructor;
 

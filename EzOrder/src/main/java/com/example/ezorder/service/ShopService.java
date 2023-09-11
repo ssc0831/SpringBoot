@@ -1,4 +1,4 @@
-package com.example.ezprder.service;
+package com.example.ezorder.service;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,8 +14,8 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.ezprder.model.Shop;
-import com.example.ezprder.repository.ShopRepository;
+import com.example.ezorder.model.Shop;
+import com.example.ezorder.repository.ShopRepository;
 
 import lombok.RequiredArgsConstructor;
 

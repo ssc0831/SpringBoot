@@ -1,8 +1,8 @@
-package com.example.ezprder.repository;
+package com.example.ezorder.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.example.ezprder.model.OrderCount;
+import com.example.ezorder.model.OrderCount;
 
 public interface OrderCountRepository extends JpaRepository<OrderCount, Long> {
 

@@ -1,4 +1,4 @@
-package com.example.ezprder.controller;
+package com.example.ezorder.controller;
 
 import java.util.List;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.ezprder.model.Menu;
-import com.example.ezprder.model.Shop;
-import com.example.ezprder.service.MenuService;
-import com.example.ezprder.service.ShopService;
+import com.example.ezorder.model.Menu;
+import com.example.ezorder.model.Shop;
+import com.example.ezorder.service.MenuService;
+import com.example.ezorder.service.ShopService;
 
 import lombok.RequiredArgsConstructor;
 

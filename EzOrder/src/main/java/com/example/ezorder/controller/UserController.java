@@ -1,12 +1,12 @@
-package com.example.ezprder.controller;
+package com.example.ezorder.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.ezprder.model.User;
-import com.example.ezprder.service.UserService;
+import com.example.ezorder.model.User;
+import com.example.ezorder.service.UserService;
 
 import lombok.RequiredArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.example.ezprder.model;
+package com.example.ezorder.model;
 
 import java.util.ArrayList;
 import java.util.List;
