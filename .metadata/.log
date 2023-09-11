@@ -2636,3 +2636,1302 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-05 11:49:42.946
 !MESSAGE Boot project ADDED: shop-master
+!SESSION 2023-09-08 14:54:36.137 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-09-08 14:54:36.908
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-09-08 14:54:50.368
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-08 14:54:50.368
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-08 14:54:53.382
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/SpringBoot_works/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1694152493381
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:53.382
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-08 14:54:53.411
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 3536
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-09-08 14:54:53.579
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-09-08 14:54:54.759
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.066
+!MESSAGE Boot project ADDED: Android
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.066
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.068
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.313
+!MESSAGE Boot project ADDED: AndroidPhone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.315
+!MESSAGE Boot project ADDED: B2CProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.316
+!MESSAGE Boot project ADDED: B2C_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.316
+!MESSAGE Boot project ADDED: EzOrder
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.317
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.317
+!MESSAGE Boot project ADDED: demo01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.318
+!MESSAGE Boot project ADDED: demo02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.318
+!MESSAGE Boot project ADDED: demo03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.319
+!MESSAGE Boot project ADDED: demo04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.319
+!MESSAGE Boot project ADDED: demo05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.320
+!MESSAGE Boot project ADDED: hello-spring
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 14:54:55.321
+!MESSAGE Boot project ADDED: shop-master
+!SESSION 2023-09-08 15:00:49.672 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-09-08 15:00:50.417
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-09-08 15:01:04.680
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-08 15:01:04.680
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-08 15:01:06.609
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/SpringBoot_works/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1694152866608
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:06.609
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-08 15:01:06.621
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9692
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-09-08 15:01:06.645
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-09-08 15:01:07.402
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.523
+!MESSAGE Boot project ADDED: Android
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.525
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.527
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.532
+!MESSAGE Boot project ADDED: AndroidPhone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.540
+!MESSAGE Boot project ADDED: B2CProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.548
+!MESSAGE Boot project ADDED: B2C_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.682
+!MESSAGE Boot project ADDED: EzOrder
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.683
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.684
+!MESSAGE Boot project ADDED: demo01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.684
+!MESSAGE Boot project ADDED: demo02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.685
+!MESSAGE Boot project ADDED: demo03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.694
+!MESSAGE Boot project ADDED: demo04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.702
+!MESSAGE Boot project ADDED: demo05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.712
+!MESSAGE Boot project ADDED: hello-spring
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:07.722
+!MESSAGE Boot project ADDED: shop-master
+
+!ENTRY org.eclipse.jface 2 0 2023-09-08 15:01:12.319
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-08 15:01:12.320
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:55.951
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:55.952
+!MESSAGE Boot project ADDED: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:56.568
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:01:57.699
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:04:36.310
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:04:56.972
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:05:04.641
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:05:37.562
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:07:31.331
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:08:20.526
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:09:01.059
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:09:36.307
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:09:51.865
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:10:10.403
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:27.669
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:27.670
+!MESSAGE Boot project REMOVED: app07_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:27.673
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-08 15:23:27.673
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:27.674
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-08 15:23:27.674
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:27.675
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-08 15:23:27.675
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:27.676
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-08 15:23:27.676
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:27.676
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-08 15:23:27.677
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:47.559
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:47.560
+!MESSAGE Boot project ADDED: app07_board
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-08 15:23:47.575
+!MESSAGE target/generated-sources/annotations [in app07_board] is not on its project's build path
+!STACK 1
+Java Model Exception: Error in Java Model (code 1006): target/generated-sources/annotations [in app07_board] is not on its project's build path
+	at org.eclipse.jdt.internal.core.JavaElement.newJavaModelException(JavaElement.java:584)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:254)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getKind(PackageFragmentRoot.java:530)
+	at org.eclipse.jdt.internal.core.JavaProject.buildStructure(JavaProject.java:543)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:266)
+	at org.eclipse.jdt.internal.core.Openable.openAncestors(Openable.java:528)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:248)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:597)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:328)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:314)
+	at org.eclipse.jdt.internal.core.JavaElement.getChildren(JavaElement.java:269)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.createCpes(ClasspathUtil.java:143)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ClasspathUtil.resolve(ClasspathUtil.java:87)
+	at org.springframework.tooling.jdt.ls.commons.classpath.SendClasspathNotificationsJob.run(SendClasspathNotificationsJob.java:130)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2023-09-08 15:23:47.575
+!MESSAGE target/generated-sources/annotations [in app07_board] is not on its project's build path
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:47.656
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:23:48.218
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:24:53.580
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:25:26.483
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:25:59.945
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:26:12.428
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:26:18.507
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:26:31.220
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:27:53.804
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:27:58.750
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:37:54.743
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:40:02.727
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-08 15:40:35.798
+!MESSAGE Unable to compute end of document
+!STACK 0
+org.eclipse.jface.text.BadLocationException
+	at org.eclipse.jface.text.TreeLineTracker.fail(TreeLineTracker.java:1054)
+	at org.eclipse.jface.text.TreeLineTracker.lineByOffset(TreeLineTracker.java:268)
+	at org.eclipse.jface.text.TreeLineTracker.getLineNumberOfOffset(TreeLineTracker.java:1122)
+	at org.eclipse.jface.text.AbstractLineTracker.getLineNumberOfOffset(AbstractLineTracker.java:246)
+	at org.eclipse.jface.text.AbstractDocument.getLineOfOffset(AbstractDocument.java:872)
+	at org.eclipse.core.internal.filebuffers.SynchronizableDocument.getLineOfOffset(SynchronizableDocument.java:334)
+	at org.eclipse.lsp4e.LSPEclipseUtils.toPosition(LSPEclipseUtils.java:178)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:44)
+	at org.eclipse.lsp4e.operations.inlayhint.InlayHintProvider.provideCodeMinings(InlayHintProvider.java:80)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1333)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaCodeMiningReconciler.reconciled(JavaCodeMiningReconciler.java:51)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.reconciled(CompilationUnitEditor.java:1685)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconciled(JavaReconcilingStrategy.java:228)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconciled(JavaCompositeReconcilingStrategy.java:171)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:115)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:42:14.923
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:42:21.043
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:42:23.540
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:51:32.003
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:51:39.571
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:51:43.112
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:51:45.219
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:52:14.379
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 15:55:44.089
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 16:00:57.300
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 16:11:22.492
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 16:11:32.341
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 16:11:46.884
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 17:14:06.721
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-08 17:14:23.710
+!MESSAGE Classpath changed for project: app07_board
+!SESSION 2023-09-11 09:16:16.183 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-09-11 09:16:18.285
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-09-11 09:17:32.287
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-11 09:17:32.287
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-11 09:17:36.009
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/SpringBoot_works/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1694391456008
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:36.009
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-11 09:17:36.046
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 8832
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-09-11 09:17:36.276
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-09-11 09:17:37.015
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.154
+!MESSAGE Boot project ADDED: Android
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.155
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.157
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.157
+!MESSAGE Boot project ADDED: AndroidPhone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.158
+!MESSAGE Boot project ADDED: B2CProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.158
+!MESSAGE Boot project ADDED: B2C_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.554
+!MESSAGE Boot project ADDED: EzOrder
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.555
+!MESSAGE Boot project ADDED: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.556
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.557
+!MESSAGE Boot project ADDED: demo01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.557
+!MESSAGE Boot project ADDED: demo02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.558
+!MESSAGE Boot project ADDED: demo03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.558
+!MESSAGE Boot project ADDED: demo04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.559
+!MESSAGE Boot project ADDED: demo05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.559
+!MESSAGE Boot project ADDED: hello-spring
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:17:37.560
+!MESSAGE Boot project ADDED: shop-master
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:07.890
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:09.646
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:15.613
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:15.614
+!MESSAGE Boot project ADDED: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:18.202
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:35.281
+!MESSAGE Classpath changed for project: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:35.282
+!MESSAGE Boot project REMOVED: app07_board
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:35.282
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2023-09-11 09:18:35.287
+!MESSAGE Failed to refresh Code Minings for editor.
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): app07_board does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:574)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getPerProjectInfoCheckExistence(JavaModelManager.java:2504)
+	at org.eclipse.jdt.internal.core.JavaProject.getPerProjectInfo(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.getRawClasspath(JavaProject.java:2487)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:428)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:76)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2023-09-11 09:18:35.288
+!MESSAGE app07_board does not exist
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:36.579
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:36.579
+!MESSAGE Boot project ADDED: app07_sboard
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:18:37.676
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.eclipse.egit.core 4 0 2023-09-11 09:19:06.616
+!MESSAGE An exception occurred during push on URI https://github.com/ssc0831/SpringBoot.git: https://github.com/ssc0831/SpringBoot.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/ssc0831/SpringBoot.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:696)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:638)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-09-11 09:19:06.618
+!MESSAGE Can't connect to any repository: https://github.com/ssc0831/SpringBoot.git (https://github.com/ssc0831/SpringBoot.git: not authorized)
+
+!ENTRY org.eclipse.jface 2 0 2023-09-11 09:19:27.320
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-11 09:19:27.320
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:21:27.716
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:21:54.557
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:22:01.527
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:22:06.149
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:22:10.808
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:24:19.416
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:24:58.303
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:25:29.450
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:25:33.359
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:25:38.908
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:25:42.569
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:25:43.639
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:26:11.288
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:26:34.752
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:26:40.031
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 09:26:41.750
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:06:30.211
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:07:17.755
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:11:31.714
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:11:37.343
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:11:53.643
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-11 10:12:55.232
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:14:20.140
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:14:23.214
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:14:24.260
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:18:52.944
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:19:50.543
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:20:45.469
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.317
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.317
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.318
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.318
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.323
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:21:02.325
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:21:38.837
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:21:39.933
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-11 10:22:26.776
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:65)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.956
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.956
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.957
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.957
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.961
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:34.963
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.769
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.769
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.770
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.770
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.776
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:29:59.778
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-11 10:30:03.116
+!MESSAGE Could not detect hyperlinks due to timeout after 800 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:68)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 2 0 2023-09-11 10:30:04.819
+!MESSAGE Could not detect hyperlinks due to timeout after 800 miliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:68)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:643)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:550)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:33:34.206
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.216
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.217
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.217
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.218
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.222
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:33:34.224
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:33:35.344
+!MESSAGE Classpath changed for project: app07_sboard
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:33:44.019
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.eclipse.egit.core 4 0 2023-09-11 10:45:31.068
+!MESSAGE An exception occurred during push on URI https://github.com/ssc0831/SpringBoot.git: https://github.com/ssc0831/SpringBoot.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/ssc0831/SpringBoot.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:696)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:638)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.egit.core 4 0 2023-09-11 10:45:56.297
+!MESSAGE An exception occurred during push on URI https://github.com/ssc0831/SpringBoot.git: https://github.com/ssc0831/SpringBoot.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/ssc0831/SpringBoot.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:696)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:638)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:138)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1537)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-09-11 10:45:56.299
+!MESSAGE Can't connect to any repository: https://github.com/ssc0831/SpringBoot.git (https://github.com/ssc0831/SpringBoot.git: not authorized)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:56:14.726
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:56:16.450
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:56:17.655
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:56:30.059
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:56:30.060
+!MESSAGE Boot project REMOVED: app08_sboard_my
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.065
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.066
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.067
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.067
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.072
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2023-09-11 10:56:30.075
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2023-09-11 10:56:55.358 -----------------------------------------------
+eclipse.buildId=4.19.0.202306150758
+java.version=17.0.7
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.emf.ecore 2 0 2023-09-11 10:56:56.111
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY org.eclipse.jface 2 0 2023-09-11 10:57:00.005
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-11 10:57:00.005
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-11 10:57:02.076
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\sts-4.19.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502\jre\bin\javaw.exe
+-cp
+C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes;C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\sts-4.19.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.47.0.202306150731\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=C:/SpringBoot_works/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1694397422076
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.077
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2023-09-11 10:57:02.087
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5536
+
+!ENTRY org.eclipse.lsp4e 4 0 2023-09-11 10:57:02.107
+!MESSAGE org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+!STACK 0
+java.lang.ClassNotFoundException: org.springframework.ide.vscode.commons.protocol.spring.SpringModelLanguageServer cannot be found by org.springframework.tooling.boot.ls_1.47.0.202306150731
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:541)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:536)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:622)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.getServerInterface(LanguageServersRegistry.java:196)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$1(LanguageServerWrapper.java:291)
+	at java.base/java.util.concurrent.CompletableFuture$UniRun.tryFire(CompletableFuture.java:787)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-09-11 10:57:02.834
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\admin'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.904
+!MESSAGE Boot project ADDED: Android
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.905
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.906
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.907
+!MESSAGE Boot project ADDED: AndroidPhone
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.908
+!MESSAGE Boot project ADDED: B2CProject
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:02.909
+!MESSAGE Boot project ADDED: B2C_Project
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.102
+!MESSAGE Boot project ADDED: EzOrder
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.102
+!MESSAGE Boot project ADDED: app07_sboard
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.103
+!MESSAGE Boot project ADDED: demo
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.103
+!MESSAGE Boot project ADDED: demo01
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.104
+!MESSAGE Boot project ADDED: demo02
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.104
+!MESSAGE Boot project ADDED: demo03
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.104
+!MESSAGE Boot project ADDED: demo04
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.105
+!MESSAGE Boot project ADDED: demo05
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.106
+!MESSAGE Boot project ADDED: hello-spring
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:03.108
+!MESSAGE Boot project ADDED: shop-master
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:34.980
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:35.101
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:36.903
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:36.904
+!MESSAGE Boot project ADDED: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 10:57:38.048
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.eclipse.jface 2 0 2023-09-11 10:57:56.370
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-09-11 10:57:56.370
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:14:09.552
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:17:26.634
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:18:08.578
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:19:27.015
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:23:27.674
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:23:49.331
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:24:32.856
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:25:03.347
+!MESSAGE Classpath changed for project: app08_sboard_my
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-09-11 11:26:32.475
+!MESSAGE Classpath changed for project: app08_sboard_my
