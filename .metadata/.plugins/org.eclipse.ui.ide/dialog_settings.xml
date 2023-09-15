@@ -49,6 +49,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\SpringBoot_works\app09_todo"/>
+			<item value="C:\SpringBoot_works\app08_sboard_my"/>
 			<item value="C:\SpringBoot_works\server"/>
 			<item value="C:\SpringBoot_works\EzOrder"/>
 			<item value="C:\EzOrder"/>

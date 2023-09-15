@@ -24,7 +24,7 @@ public class BoardService {
 		return boardRepository.findAll();
 	}
 	
-	//삭제
+	// 삭제
 	public void delete(long num) {
 		boardRepository.deleteById(num);
 		
