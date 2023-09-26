@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>book_blog</artifactId>
+	<artifactId>book_blog_serv</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>book_blog</name>
-	<description>Demo project for Spring Boot</description>
+	<name>book_blog_serv</name>
+	<description>React Study book-blog api</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
