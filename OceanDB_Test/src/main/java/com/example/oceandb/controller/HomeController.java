@@ -18,10 +18,10 @@ public class HomeController {
 		return " ";
 	}
 	
-	@PostMapping("/upload")
-	public String Upload(){
-		return " ";
-	}
+//	@PostMapping("/upload")
+//	public String Upload(){
+//		return " ";
+//	}
 	
 	
 
